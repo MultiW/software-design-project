@@ -1,2 +1,1 @@
-# software-design-project
-University of Toronto software design class project.
+# Software Design Group Project

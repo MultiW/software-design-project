@@ -1,0 +1,196 @@
+Order SES Blue
+Order SES Red
+Order SE Beige
+Order SE Beige
+Ready Picker Alice 
+Order S Beige
+Order SES Green
+Order SE White
+Pick 11 Picker Alice 
+Order SE Black
+Pick 10 Picker Alice
+Rescan Picker Alice
+Pick 10 Picker Alice
+Rescan Picker Alice
+Pick 10 Picker Alice
+Rescan Picker Alice
+Pick 11 Picker Alice 
+Pick 12 Picker Alice 
+Order SE Red
+Order S Green
+Order SES Green
+Order S White
+Ready Picker Bob 
+Pick 12 Picker Alice 
+Pick 3 Picker Bob 
+Pick 21 Picker Alice 
+Pick 4 Picker Bob 
+Order SES Beige
+Pick 9 Picker Bob 
+Pick 22 Picker Alice 
+Pick 10 Picker Bob 
+Pick 29 Picker Bob 
+Pick 37 Picker Alice 
+Order SE Blue
+Pick 38 Picker Alice 
+Confirm Picker Alice
+Order S Red
+Marshal Picker Alice
+Ready Picker Alice
+Ready Sequencer Sue 
+Pick 30 Picker Bob 
+Pick 43 Picker Bob 
+Pick 1 Picker Alice 
+Sequence 37 Sequencer Sue 
+Sequence 11 Sequencer Sue
+Rescan Sequencer Sue
+Sequence 11 Sequencer Sue
+Rescan Sequencer Sue
+Sequence 11 Sequencer Sue
+Rescan Sequencer Sue
+Sequence 27 Sequencer Sue
+Rescan Sequencer Sue
+Sequence 37 Sequencer Sue
+Sequence 21 Sequencer Sue 
+Sequence 11 Sequencer Sue
+Ready Replenisher Ruby 
+Sequence 11 Sequencer Sue 
+Sequence 38 Sequencer Sue 
+Sequence 22 Sequencer Sue 
+Sequence 12 Sequencer Sue 
+Sequence 12 Sequencer Sue 
+Confirm Sequencer Sue
+Ready Sequencer Sue
+Ready Loader Bill 
+Pick 2 Picker Alice
+Load 38 Loader Bill
+Load 21 Loader Bill
+Rescan Loader Bill 
+Load 21 Loader Bill
+Rescan Loader Bill
+Load 21 Loader Bill
+Rescan Loader Bill
+Load 38 Loader Bill 
+Load 22 Loader Bill 
+Load 12 Loader Bill 
+Load 12 Loader Bill 
+Load 37 Loader Bill 
+Load 21 Loader Bill 
+Load 11 Loader Bill 
+Load 11 Loader Bill 
+Confirm Loader Bill
+Loaded 1 Loader Bill 
+Ready Loader Bill
+Order S Red
+Pick 44 Picker Bob 
+Confirm Picker Bob
+Pick 19 Picker Alice 
+Replenish 44 Replenisher Ruby
+Marshal Picker Bob
+Ready Picker Bob
+Pick 20 Picker Alice 
+Pick 25 Picker Alice 
+Pick 13 Picker Bob 
+Pick 14 Picker Bob 
+Pick 26 Picker Alice 
+Pick 17 Picker Bob 
+Sequence 9 Sequencer Sue 
+Sequence 29 Sequencer Sue 
+Sequence 3 Sequencer Sue 
+Sequence 43 Sequencer Sue 
+Sequence 10 Sequencer Sue 
+Sequence 30 Sequencer Sue 
+Sequence 4 Sequencer Sue 
+Sequence 44 Sequencer Sue 
+Confirm Sequencer Sue
+Ready Sequencer Sue
+Pick 17 Picker Bob 
+Pick 29 Picker Alice 
+Load 10 Loader Bill 
+Load 30 Loader Bill 
+Load 4 Loader Bill 
+Load 44 Loader Bill 
+Load 9 Loader Bill 
+Load 29 Loader Bill 
+Load 3 Loader Bill 
+Load 43 Loader Bill 
+Confirm Loader Bill
+Loaded 2 Loader Bill 
+Ready Loader Bill
+Ready Replenisher Ruby 
+Pick 30 Picker Alice 
+Confirm Picker Alice
+Pick 18 Picker Bob 
+Marshal Picker Alice
+Pick 18 Picker Bob 
+Sequence 19 Sequencer Sue 
+Sequence 25 Sequencer Sue 
+Sequence 29 Sequencer Sue 
+Sequence 1 Sequencer Sue 
+Sequence 20 Sequencer Sue 
+Sequence 26 Sequencer Sue 
+Sequence 30 Sequencer Sue 
+Sequence 2 Sequencer Sue 
+Confirm Sequencer Sue
+Ready Sequencer Sue
+Pick 35 Picker Bob 
+Replenish 19 Replenisher Ruby 
+Pick 36 Picker Bob 
+Confirm Picker Bob
+Load 20 Loader Bill 
+Load 26 Loader Bill 
+Load 30 Loader Bill 
+Load 2 Loader Bill 
+Load 19 Loader Bill 
+Load 25 Loader Bill 
+Load 29 Loader Bill 
+Load 1 Loader Bill 
+Confirm Loader Bill
+Loaded 3 Loader Bill
+Ready Loader Bill
+Marshal Picker Bob 
+Ready Picker Bob
+Sequence 13 Sequencer Sue 
+Sequence 35 Sequencer Sue 
+Sequence 17 Sequencer Sue 
+Sequence 17 Sequencer Sue 
+Sequence 14 Sequencer Sue 
+Sequence 36 Sequencer Sue 
+Sequence 18 Sequencer Sue 
+Sequence 19 Sequencer Sue
+Rescan Sequencer Sue
+Sequence 19 Sequencer Sue
+Rescan Sequencer Sue
+Sequence 19 Sequencer Sue
+Throwout Sequencer Sue
+Ready Sequencer Sue
+Pick 13 Picker Bob
+Pick 14 Picker Bob
+Pick 17 Picker Bob
+Pick 17 Picker Bob
+Pick 18 Picker Bob
+Pick 18 Picker Bob
+Pick 35 Picker Bob
+Pick 36 Picker Bob
+Confirm Picker Bob
+Marshal Picker Bob
+Sequence 13 Sequencer Sue 
+Sequence 35 Sequencer Sue 
+Sequence 17 Sequencer Sue 
+Sequence 17 Sequencer Sue 
+Sequence 14 Sequencer Sue 
+Sequence 36 Sequencer Sue 
+Sequence 18 Sequencer Sue 
+Sequence 18 Sequencer Sue
+Confirm Sequencer Sue
+Load 14 Loader Bill 
+Load 36 Loader Bill 
+Load 18 Loader Bill 
+Load 18 Loader Bill 
+Load 13 Loader Bill 
+Load 35 Loader Bill 
+Load 17 Loader Bill 
+Load 17 Loader Bill 
+Confirm Loader Bill
+Loaded 4 Loader Bill 
+End

@@ -1,0 +1,71 @@
+Order SES Blue
+Order SE Red
+Ready Picker Patrick
+Order SE Black
+Order SE Black
+Pick 19 Picker Patrick
+Pick 20 Picker Patrick 
+Pick 37 Picker Patrick 
+Ready Replenisher Ruby
+Ready Loader Larry 
+Pick 38 Picker Patrick 
+Pick 43 Picker Patrick 
+Pick 42 Picker Patrick
+Replenish A,1,1,2 Replenisher Ruby
+Rescan Picker Patrick
+Pick 43 Picker Patrick 
+Ready Sequencer Sally 
+Pick 44 Picker Patrick 
+Pick 44 Picker Patrick 
+Confirm Picker Patrick
+Marshal Picker Patrick
+Sequence 37 Sequencer Sally 
+Sequence 39 Sequencer Sally
+Rescan Sequencer Sally
+Sequence 37 Sequencer Sally 
+Sequence 38 Sequencer Sally
+Sequence 19 Sequencer Sally 
+Sequence 20 Sequencer Sally 
+Sequence 43 Sequencer Sally 
+Sequence 44 Sequencer Sally 
+Sequence 43 Sequencer Sally 
+Sequence 45 Sequencer Sally 
+Throwout Sequencer Sally
+Ready Picker Patrick
+Pick 19 Picker Patrick
+Pick 20 Picker Patrick 
+Pick 37 Picker Patrick 
+Ready Loader Larry 
+Pick 38 Picker Patrick 
+Pick 43 Picker Patrick 
+Pick 42 Picker Patrick
+Rescan Picker Patrick
+Pick 43 Picker Patrick 
+Ready Sequencer Sally 
+Pick 44 Picker Patrick 
+Pick 44 Picker Patrick 
+Confirm Picker Patrick
+Marshal Picker Patrick
+Sequence 37 Sequencer Sally 
+Sequence 38 Sequencer Sally
+Sequence 19 Sequencer Sally 
+Sequence 20 Sequencer Sally 
+Sequence 43 Sequencer Sally 
+Sequence 44 Sequencer Sally 
+Sequence 43 Sequencer Sally 
+Sequence 44 Sequencer Sally 
+Confirm Sequencer Sally
+Load 37 Loader Larry 
+Load 20 Loader Larry
+Rescan Loader Larry
+Load 43 Loader Larry 
+Load 44 Loader Larry 
+Load 43 Loader Larry 
+Load 44 Loader Larry 
+Load 37 Loader Larry 
+Load 38 Loader Larry
+Load 19 Loader Larry 
+Load 20 Loader Larry 
+Confirm Loader Larry
+Loaded 1 Loader Larry 
+End

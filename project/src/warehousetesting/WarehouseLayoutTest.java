@@ -1,0 +1,83 @@
+package warehousetesting;
+
+import static org.junit.Assert.*;
+
+import warehousing.ReadFile;
+import warehousing.WarehouseLayout;
+import org.junit.Test;
+
+public class WarehouseLayoutTest {
+
+  private String initial = "initial_test.csv";
+
+  @Test
+  public void testGetStock() {
+    WarehouseLayout w = new WarehouseLayout(initial);
+    String location = "A,1,1,2";
+    assertEquals(2, w.getStock(location));
+  }
+
+  @Test
+  public void testReplenish() {
+    WarehouseLayout w = new WarehouseLayout(initial);
+    String location = "A,1,1,2";
+    assertEquals("19", w.getFascia(location));
+    assertEquals("19", w.getNeedReplenish());
+    w.replenish(location);
+    assertEquals(30, w.getStock(location));
+  }
+
+  @Test
+  public void testGetLocation() {
+    WarehouseLayout w = new WarehouseLayout(initial);
+    String location = "A,1,1,2";
+    assertEquals(location, w.getLocation("19"));
+  }
+
+  @Test
+  public void testGetSku() {
+    WarehouseLayout w = new WarehouseLayout(initial);
+    String location = "A,1,1,2";
+    assertEquals("19", w.getSku(location));
+  }
+
+  @Test
+  public void testReturnFascia() {
+    WarehouseLayout w = new WarehouseLayout(initial);
+    String location = "A,1,1,2";
+    w.returnFascia(location);
+    assertEquals(3, w.getStock(location));
+  }
+
+  @Test
+  public void testReturnFasciaFull() {
+    WarehouseLayout w = new WarehouseLayout(initial);
+    String location = "A,0,0,0";
+    w.returnFascia(location);
+    assertEquals(30, w.getStock(location));
+  }
+
+  @Test
+  public void testOutput() {
+    WarehouseLayout w = new WarehouseLayout(initial);
+    w.outputFile("final_test.csv", "final_test.csv2");
+
+    ReadFile read1 = new ReadFile("final_test.csv");
+    ReadFile read2 = new ReadFile(initial);
+    ReadFile read3 = new ReadFile("final_test.csv2");
+    String line1 = read1.readLine();
+    String line2 = read2.readLine();
+    String line3 = read3.readLine();
+
+    while (line1 != null) {
+      line1 = read1.readLine();
+      line2 = read2.readLine();
+      line3 = read3.readLine();
+    }
+    assertTrue(line1 == line2);
+    assertTrue(line2 == line3);
+    read1.closeFile();
+    read2.closeFile();
+    read3.closeFile();
+  }
+}

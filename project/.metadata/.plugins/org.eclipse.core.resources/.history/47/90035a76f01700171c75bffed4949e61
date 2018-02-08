@@ -1,0 +1,173 @@
+package warehousing;
+
+import java.util.HashMap;
+
+/**
+ * A representation of the warehouse.
+ */
+
+public class WarehouseLayout {
+  private ReadFile initial;
+  private HashMap<String, Integer> zones = new HashMap<String, Integer>();
+  private HashMap<String, String> skus = new HashMap<String, String>();
+  private HashMap<String, String> locations = new HashMap<String, String>();
+  private final int maxStock;
+  private String needReplenish;
+  private String output;
+
+  /**
+   * Creates a new warehouse with all picking faces full.
+   */
+  public WarehouseLayout() {
+    initial = new ReadFile("warehouseconfig.txt");
+    String newLine = initial.readLine();
+    int num = 30;
+    while (newLine != null) {
+      String[] settings = newLine.split("=");
+      if (settings[0].equals("maxstock")) {
+        num = Integer.parseInt(settings[1]);
+      }
+      newLine = initial.readLine();
+    }
+    maxStock = num;
+    initial.closeFile();
+    initial = new ReadFile("traversal_table.csv");
+    newLine = initial.readLine();
+    while (newLine != null) {
+      String[] layout = newLine.split(",");
+      String location = layout[0] + "," + layout[1] + "," + layout[2] + "," + layout[3];
+      zones.put(location, maxStock);
+      skus.put(location, layout[4]);
+      locations.put(layout[4], location);
+      newLine = initial.readLine();
+    }
+    initial.closeFile();
+    needReplenish = "";
+    output = "";
+  }
+
+  /**
+   * Creates a new warehouse with all picking faces full, except those specified in the file.
+   * Specified picking faces will be filled to specified capacity.
+   * 
+   * @param fileName is the location of the file to be read.
+   */
+  public WarehouseLayout(String fileName) {
+    this();
+    initial = new ReadFile(fileName);
+    String newLine = initial.readLine();
+    while (newLine != null) {
+      String[] input = newLine.split(",");
+      String location = input[0] + "," + input[1] + "," + input[2] + "," + input[3];
+      zones.put(location, Integer.parseInt(input[4]));
+      newLine = initial.readLine();
+    }
+    initial.closeFile();
+  }
+
+  /**
+   * Returns the SKU of the fascia taken from the picking face, specified at the location given.
+   * 
+   * @param location provides the location of a fascia in the format "zone,aisle,rack,level".
+   */
+  public String getFascia(String location) {
+    int stock = zones.get(location);
+    zones.put(location, stock - 1);
+    if (stock - 1 <= 5) {
+      needReplenish = getSku(location);
+      output = "Please replenish " + needReplenish;
+    }
+    return skus.get(location);
+  }
+
+  /**
+   * Gets the stock of the fascia at specified location.
+   * 
+   * @param location provides the location of a fascia in the format "zone,aisle,rack,level".
+   */
+  public int getStock(String location) {
+    int stock = zones.get(location);
+    return stock;
+  }
+
+  /**
+   * Refills a picking face to max stock, given a location
+   * 
+   * @param location provides the location of a fascia in the format "zone,aisle,rack,level".
+   */
+  public void replenish(String location) {
+    zones.put(location, maxStock);
+    needReplenish = "";
+    output = "";
+  }
+
+  /**
+   * Puts a fascia back on rack, given a location.
+   * 
+   * @param location the location oof a fascia.
+   */
+  public void returnFascia(String location) {
+    int stock = zones.get(location);
+    if (stock < maxStock) {
+      zones.put(location, stock + 1);
+    }
+  }
+
+  /**
+   * Returns the SKU of the fascia at a specified location
+   * 
+   * @param location is a string in the format "zone,aisle,rack,level".
+   */
+  public String getSku(String location) {
+    return skus.get(location);
+  }
+
+
+  /**
+   * Returns the location of a fascia given the SKU.
+   * 
+   * @param sku the string id of a fascia.
+   */
+  public String getLocation(String sku) {
+    return locations.get(sku);
+  }
+
+  /**
+   * Outputs a file which contains all the picking faces with less than maxStock fascias.
+   * Also writes this information to the initial file that this class will read
+   * upon initialization.
+   * 
+   * @param filename is a string with the name of the file being output
+   */
+  public void outputFile(String fileFinal, String fileInitial) {
+    WriteFile finaloutput = new WriteFile(fileFinal);
+    for (HashMap.Entry<String, Integer> entry : zones.entrySet()) {
+      String key = entry.getKey();
+      Integer value = entry.getValue();
+      if (value < maxStock) {
+        finaloutput.writeLine(key + "," + value.toString());
+      }
+    }
+    finaloutput.closeFile();
+  }
+
+  /**
+   * Returns the sku of a fascia that needs to be replenished.
+   * 
+   * @return a string containing a location.
+   */
+  public String getNeedReplenish() {
+    return needReplenish;
+  }
+
+  /**
+   * Returns an output message telling a worker to replenish a fascia.
+   * 
+   * @return a string which contains the fascia to be replenished
+   */
+  public String getOutput() {
+    return output;
+  }
+
+
+}

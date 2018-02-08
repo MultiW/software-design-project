@@ -1,0 +1,188 @@
+input: Order SES Blue
+input: Order SE Red
+input: Ready Picker Patrick
+input: Order SE Black
+input: Order SE Black
+output: Patrick please pick next at A,1,1,2
+input: Pick 19 Picker Patrick
+output: Patrick please pick next at A,1,1,3
+input: Pick 20 Picker Patrick 
+output: Patrick please pick next at B,1,0,0
+input: Pick 37 Picker Patrick 
+output: Patrick please pick next at B,1,0,1
+input: Ready Replenisher Ruby
+input: Ready Loader Larry 
+input: Pick 38 Picker Patrick 
+output: Patrick please pick next at B,1,1,2
+input: Pick 43 Picker Patrick 
+output: Patrick please pick next at B,1,1,2
+output: Please replenish 43
+input: Pick 42 Picker Patrick
+output: Wrong Fascia Patrick, please go to B,1,1,2
+output: Please replenish 43
+input: Replenish A,1,1,2 Replenisher Ruby
+output: Ruby scanned A,1,1,2
+input: Rescan Picker Patrick
+output: Patrick requested rescan
+input: Pick 43 Picker Patrick 
+output: Patrick please pick next at B,1,1,3
+output: Please replenish 43
+input: Ready Sequencer Sally 
+output: Please replenish 43
+input: Pick 44 Picker Patrick 
+output: Patrick please pick next at B,1,1,3
+output: Please replenish 43
+input: Pick 44 Picker Patrick 
+output: Patrick please Confirm
+output: Please replenish 43
+input: Confirm Picker Patrick
+output: Patrick go to marshal
+output: Please replenish 43
+input: Marshal Picker Patrick
+output: Patrick reached marshal area
+output: Sally sequence order set1
+output: Please replenish 43
+input: Sequence 37 Sequencer Sally 
+output: Sally scanned 37
+output: Please replenish 43
+input: Sequence 39 Sequencer Sally
+output: Sally Sku 39 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Rescan Sequencer Sally
+output: Please replenish 43
+input: Sequence 37 Sequencer Sally 
+output: Sally scanned 37
+output: Please replenish 43
+input: Sequence 38 Sequencer Sally
+output: Sally Sku 38 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Sequence 19 Sequencer Sally 
+output: Sally scanned 19
+output: Please replenish 43
+input: Sequence 20 Sequencer Sally 
+output: Sally Sku 20 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Sequence 43 Sequencer Sally 
+output: Sally scanned 43
+output: Please replenish 43
+input: Sequence 44 Sequencer Sally 
+output: Sally Sku 44 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Sequence 43 Sequencer Sally 
+output: Sally scanned 43
+output: Please replenish 43
+input: Sequence 45 Sequencer Sally 
+output: Sally Sku 45 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Throwout Sequencer Sally
+output: Please replenish 43
+input: Ready Picker Patrick
+output: Patrick please pick next at A,1,1,2
+output: Please replenish 43
+input: Pick 19 Picker Patrick
+output: Patrick please pick next at A,1,1,3
+output: Please replenish 43
+input: Pick 20 Picker Patrick 
+output: Patrick please pick next at B,1,0,0
+output: Please replenish 43
+input: Pick 37 Picker Patrick 
+output: Patrick please pick next at B,1,0,1
+output: Please replenish 43
+input: Ready Loader Larry 
+output: Please replenish 43
+input: Pick 38 Picker Patrick 
+output: Patrick please pick next at B,1,1,2
+output: Please replenish 43
+input: Pick 43 Picker Patrick 
+output: Patrick please pick next at B,1,1,2
+output: Please replenish 43
+input: Pick 42 Picker Patrick
+output: Wrong Fascia Patrick, please go to B,1,1,2
+output: Please replenish 43
+input: Rescan Picker Patrick
+output: Patrick requested rescan
+output: Please replenish 43
+input: Pick 43 Picker Patrick 
+output: Patrick please pick next at B,1,1,3
+output: Please replenish 43
+input: Ready Sequencer Sally 
+output: Please replenish 43
+input: Pick 44 Picker Patrick 
+output: Patrick please pick next at B,1,1,3
+output: Please replenish 43
+input: Pick 44 Picker Patrick 
+output: Patrick please Confirm
+output: Please replenish 43
+input: Confirm Picker Patrick
+output: Patrick go to marshal
+output: Please replenish 43
+input: Marshal Picker Patrick
+output: Patrick reached marshal area
+output: Sally sequence order set1
+output: Please replenish 43
+input: Sequence 37 Sequencer Sally 
+output: Sally scanned 37
+output: Please replenish 43
+input: Sequence 38 Sequencer Sally
+output: Sally Sku 38 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Sequence 19 Sequencer Sally 
+output: Sally scanned 19
+output: Please replenish 43
+input: Sequence 20 Sequencer Sally 
+output: Sally Sku 20 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Sequence 43 Sequencer Sally 
+output: Sally scanned 43
+output: Please replenish 43
+input: Sequence 44 Sequencer Sally 
+output: Sally Sku 44 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Sequence 43 Sequencer Sally 
+output: Sally scanned 43
+output: Please replenish 43
+input: Sequence 44 Sequencer Sally 
+output: Sally Sku 44 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Confirm Sequencer Sally
+output: Sally confirmed, ready to load
+output: Loader Larry begin scanning picking request 1
+output: Please replenish 43
+input: Load 37 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Load 20 Loader Larry
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Rescan Loader Larry
+output: Please replenish 43
+input: Load 43 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Load 44 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Load 43 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Load 44 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Load 37 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Load 38 Loader Larry
+output: Correct scan.
+output: Please replenish 43
+input: Load 19 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Load 20 Loader Larry 
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Confirm Loader Larry
+output: Please replenish 43
+input: Loaded 1 Loader Larry 
+output: Please replenish 43
+input: End
+output: Please replenish 43

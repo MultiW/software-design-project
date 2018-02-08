@@ -1,0 +1,51 @@
+========================================================================================================================
+Each group member should describe what they contributed to phase 1 in 100 words or less. Bullet points are fine.
+You are encouraged to discuss this with your group.
+Note that all group members will be editing the same document.
+We will be checking git logs to make sure that each person is the one that commits a description of their contributions.
+Part of your individual mark will depend on how much you contribute and the quality of your contributions. 
+========================================================================================================================
+
+Harvey
+- Create Order and OrderSet class and WriteFile class. 
+- Design and create Uml for the project. 
+- Test on some cases of project.
+- Create all Creator classes.
+
+James
+- implemented Employee
+- implemented Picker
+- implemented Sequencer
+- implemented WarehouseManager (about half)
+- implemented WarehouseTesting(some)
+- implemented Replenisher
+- initial implementation of warehouse, order and employee manager
+- testing for picker, sequencer and replenisher, as well as debugging
+- debugged testing cases with group
+- initial design of creator class
+- implemented event manager and all event classes
+
+Kevin
+- Created WarehouseLayout and majority of Unit tests
+- Debugging for WarehouseManager, Order, OrderSet, Pallet, Employee
+- Wrote instructions for compiling from console and 16orders.txt
+- Created and implemented SoftwareManager
+- Debugging and rework for portions of EmployeeManager, WarehouseManager, OrderManager
+- Aided in creation for event classes
+
+Xin
+- Created and designed SkuTranslation, ReadFile, Loader, and Truck classes.
+- Coded part of WarehouseManager (old version) that implements Loader and Truck, and coded part of Pallet class.
+- Created tests for ReadFile and WriteFile, Loader, and Truck.
+- Implemented recent versions of assignTask methods and replenishTask methods, and connected it with SoftwareManager
+to fit in to the processes in the warehouse.
+- Implemented Loader and Truck into manager classes.
+- Contributed design and implementation ideas for manager classes.
+- Debugging for assignTask and Loading related tasks, and helped debug other parts of the project.
+
+Group
+- UML diagram. Everyone updates the UML diagram as they work on their code.
+- Warehouse (done by whoever)
+- Input and output (done by whoever)
+- Debugging and fixing errors.
+- design patterns

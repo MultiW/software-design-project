@@ -1,0 +1,77 @@
+Instructions for running and compiling from command line:
+cd project
+cd src
+javac employeeCreator/*.java events/*.java Managers/*.java warehousing/*.java
+java warehousing/Warehouse 16orders.txt
+
+
+We have provided 3 variations for input files, 4orders.txt, 16orders.txt, and 16ordersHard.txt
+
+Format for 16orders.txt
+Orders only use the first 48 skus(up to row 25 of translation.csv).
+
+Input format for employee actions: ActionType SKU EmployeeType EmployeeName.
+Examples for each type:
+	Pick 3 Picker Alice 
+	Sequence 2 Sequencer Sally 
+	Load 7 Loader Tom 
+	Replenish 12 Replenisher Ruby
+SKUs can be represented with any string which do not contain a white space.
+
+Orders should come in the form: Order Model Colour.
+Example: Order SES Blue
+
+Before employees can perform any action, they must be "ready".
+i.e. the input cannot be: Order SES White
+			  Order SE Blue
+			  Order SEL Read
+			  Order S Green
+			  Pick 5 Picker Alice 
+Instead input should look like: Order SES White
+				Order SE Blue
+				Order SEL Read
+				Order S Green
+				Ready Picker Alice
+				Pick 5 Picker Alice 
+The general form for "readying" an employee is: Ready EmployeeType EmployeeName.
+Readying must be done before an employee before an employee can have work assigned to it.
+
+When pickers finish picking for an order set, the must go to marshalling. This is represented by a line in the form: Marshal Picker EmployeeName.
+Sequencers cannot begin sequencing until after a picker has gone to marshalling.
+
+When Loaders finish loading all the fascias listed in an order set, the must confirm the order set has been completely loaded.
+This is represented byt the following line type: Loader EmployeeName loaded OrderSetId
+OrderSetId starts at 1 and increments by 1 with every new orderset created. As such, the first 4 orders would be part of order set 1 and have id 1.
+Example:
+	Order SES Blue
+	Order SES Red
+	Order SE Black
+	Order SE Black
+	>>>
+	...
+	>>>
+	Load 37 Loader Larry
+	Load 21 Loader Larry 
+	Load 43 Loader Larry 
+	Load 43 Loader Larry 
+	Load 38 Loader Larry 
+	Load 22 Loader Larry 
+	Load 44 Loader Larry 
+	Load 44 Loader Larry 
+	Loaded 1 Loader Larry 
+
+
+
+Extensibility
+The system can be customized using the files, initial.csv, traversal_table.csv, and warehouseconfig.txt
+By design, initial.csv is overwritten at the end of the program to prepare for the next usage. To view the original information, please refer to initialoriginal.csv.
+Using traversal_table.csv, the layout of the warehouse can be customized. Each line in the file
+represents an item in the warehouse, with the first 4 indexes representing a coordinate system for the
+location of the item and the last index representing the string id of the product. 
+
+initial.csv will provide the initial stock levels of each product. The first 4 indexes are coordinates
+and the last index is the stock level.
+
+warehouseconfig.txt allows for customizing of order size, pallet size, stock levels. Default values are 
+already given in the file. To change them from default simply change the value next to the appropriate 
+setting.

@@ -1,0 +1,3 @@
+ordersetsize=4
+palletsize=4
+maxstock=30

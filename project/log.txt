@@ -1,0 +1,401 @@
+input: Order SES Blue
+input: Order SES Red
+input: Order SE Beige
+input: Order SE Beige
+input: Ready Picker Alice 
+output: Alice please pick next at A,0,2,2
+input: Order S Beige
+input: Order SES Green
+input: Order SE White
+input: Pick 11 Picker Alice 
+output: Alice please pick next at A,0,2,2
+input: Order SE Black
+input: Pick 10 Picker Alice
+output: Wrong Fascia Alice, please go to A,0,2,2
+input: Rescan Picker Alice
+output: Alice requested rescan
+input: Pick 10 Picker Alice
+output: Wrong Fascia Alice, please go to A,0,2,2
+input: Rescan Picker Alice
+output: Alice requested rescan
+input: Pick 10 Picker Alice
+output: Wrong Fascia Alice, please go to A,0,2,2
+input: Rescan Picker Alice
+output: Alice requested rescan
+input: Pick 11 Picker Alice 
+output: Alice please pick next at A,0,2,3
+input: Pick 12 Picker Alice 
+output: Alice please pick next at A,0,2,3
+input: Order SE Red
+input: Order S Green
+input: Order SES Green
+input: Order S White
+input: Ready Picker Bob 
+output: Bob please pick next at A,0,0,2
+input: Pick 12 Picker Alice 
+output: Alice please pick next at A,1,2,0
+input: Pick 3 Picker Bob 
+output: Bob please pick next at A,0,0,3
+input: Pick 21 Picker Alice 
+output: Alice please pick next at A,1,2,1
+input: Pick 4 Picker Bob 
+output: Bob please pick next at A,0,2,0
+input: Order SES Beige
+input: Pick 9 Picker Bob 
+output: Bob please pick next at A,0,2,1
+input: Pick 22 Picker Alice 
+output: Alice please pick next at B,1,0,0
+input: Pick 10 Picker Bob 
+output: Bob please pick next at B,0,1,0
+input: Pick 29 Picker Bob 
+output: Bob please pick next at B,0,1,1
+input: Pick 37 Picker Alice 
+output: Alice please pick next at B,1,0,1
+input: Order SE Blue
+input: Pick 38 Picker Alice 
+output: Alice please Confirm
+input: Confirm Picker Alice
+output: Alice go to marshal
+input: Order S Red
+input: Marshal Picker Alice
+output: Alice reached marshal area
+input: Ready Picker Alice
+output: Alice please pick next at A,0,0,0
+input: Ready Sequencer Sue 
+output: Sue sequence order set1
+input: Pick 30 Picker Bob 
+output: Bob please pick next at B,1,1,2
+input: Pick 43 Picker Bob 
+output: Bob please pick next at B,1,1,3
+output: Please replenish 43
+input: Pick 1 Picker Alice 
+output: Alice please pick next at A,0,0,1
+output: Please replenish 43
+input: Sequence 37 Sequencer Sue 
+output: Sue scanned 37
+output: Please replenish 43
+input: Sequence 11 Sequencer Sue
+output: Sue Sku 11 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Rescan Sequencer Sue
+output: Please replenish 43
+input: Sequence 11 Sequencer Sue
+output: Sue Sku 11 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Rescan Sequencer Sue
+output: Please replenish 43
+input: Sequence 11 Sequencer Sue
+output: Sue Sku 11 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Rescan Sequencer Sue
+output: Please replenish 43
+input: Sequence 27 Sequencer Sue
+output: Sue Sku 27 is incorrect. Rescan or throw away.
+output: Please replenish 43
+input: Rescan Sequencer Sue
+output: Please replenish 43
+input: Sequence 37 Sequencer Sue
+output: Sue scanned 37
+output: Please replenish 43
+input: Sequence 21 Sequencer Sue 
+output: Sue scanned 21
+output: Please replenish 43
+input: Sequence 11 Sequencer Sue
+output: Sue scanned 11
+output: Please replenish 43
+input: Ready Replenisher Ruby 
+output: Please replenish 43
+input: Sequence 11 Sequencer Sue 
+output: Sue scanned 11
+output: Please replenish 43
+input: Sequence 38 Sequencer Sue 
+output: Sue scanned 38
+output: Please replenish 43
+input: Sequence 22 Sequencer Sue 
+output: Sue scanned 22
+output: Please replenish 43
+input: Sequence 12 Sequencer Sue 
+output: Sue scanned 12
+output: Please replenish 43
+input: Sequence 12 Sequencer Sue 
+output: Sue sequenced correct, please confirm
+output: Please replenish 43
+input: Confirm Sequencer Sue
+output: Sue confirmed, ready to load
+output: Please replenish 43
+input: Ready Sequencer Sue
+output: Please replenish 43
+input: Ready Loader Bill 
+output: Loader Bill begin scanning picking request 1
+output: Please replenish 43
+input: Pick 2 Picker Alice
+output: Alice please pick next at A,1,1,2
+output: Please replenish 43
+input: Load 38 Loader Bill
+output: Correct scan.
+output: Please replenish 43
+input: Load 21 Loader Bill
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Rescan Loader Bill 
+output: Please replenish 43
+input: Load 21 Loader Bill
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Rescan Loader Bill
+output: Please replenish 43
+input: Load 21 Loader Bill
+output: Incorrect scan. Please rearrange and rescan or throw out.
+output: Please replenish 43
+input: Rescan Loader Bill
+output: Please replenish 43
+input: Load 38 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Load 22 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Load 12 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Load 12 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Load 37 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Load 21 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Load 11 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Load 11 Loader Bill 
+output: Correct scan.
+output: Please replenish 43
+input: Confirm Loader Bill
+output: Please replenish 43
+input: Loaded 1 Loader Bill 
+output: Please replenish 43
+input: Ready Loader Bill
+output: Please replenish 43
+input: Order S Red
+output: Please replenish 43
+input: Pick 44 Picker Bob 
+output: Bob please Confirm
+output: Please replenish 43
+input: Confirm Picker Bob
+output: Bob go to marshal
+output: Please replenish 43
+input: Pick 19 Picker Alice 
+output: Alice please pick next at A,1,1,3
+output: Please replenish 43
+input: Replenish 44 Replenisher Ruby
+output: Ruby scanned 44
+input: Marshal Picker Bob
+output: Sue sequence order set2
+output: Bob reached marshal area
+input: Ready Picker Bob
+output: Bob please pick next at A,1,0,0
+input: Pick 20 Picker Alice 
+output: Alice please pick next at B,0,0,0
+input: Pick 25 Picker Alice 
+output: Alice please pick next at B,0,0,1
+input: Pick 13 Picker Bob 
+output: Bob please pick next at A,1,0,1
+input: Pick 14 Picker Bob 
+output: Bob please pick next at A,1,1,0
+input: Pick 26 Picker Alice 
+output: Alice please pick next at B,0,1,0
+input: Pick 17 Picker Bob 
+output: Bob please pick next at A,1,1,0
+input: Sequence 9 Sequencer Sue 
+output: Sue scanned 9
+input: Sequence 29 Sequencer Sue 
+output: Sue scanned 29
+input: Sequence 3 Sequencer Sue 
+output: Sue scanned 3
+input: Sequence 43 Sequencer Sue 
+output: Sue scanned 43
+input: Sequence 10 Sequencer Sue 
+output: Sue scanned 10
+input: Sequence 30 Sequencer Sue 
+output: Sue scanned 30
+input: Sequence 4 Sequencer Sue 
+output: Sue scanned 4
+input: Sequence 44 Sequencer Sue 
+output: Sue sequenced correct, please confirm
+input: Confirm Sequencer Sue
+output: Sue confirmed, ready to load
+output: Loader Bill begin scanning picking request 2
+input: Ready Sequencer Sue
+input: Pick 17 Picker Bob 
+output: Bob please pick next at A,1,1,1
+input: Pick 29 Picker Alice 
+output: Alice please pick next at B,0,1,1
+input: Load 10 Loader Bill 
+output: Correct scan.
+input: Load 30 Loader Bill 
+output: Correct scan.
+input: Load 4 Loader Bill 
+output: Correct scan.
+input: Load 44 Loader Bill 
+output: Correct scan.
+input: Load 9 Loader Bill 
+output: Correct scan.
+input: Load 29 Loader Bill 
+output: Correct scan.
+input: Load 3 Loader Bill 
+output: Correct scan.
+input: Load 43 Loader Bill 
+output: Correct scan.
+input: Confirm Loader Bill
+input: Loaded 2 Loader Bill 
+input: Ready Loader Bill
+input: Ready Replenisher Ruby 
+input: Pick 30 Picker Alice 
+output: Alice please Confirm
+input: Confirm Picker Alice
+output: Alice go to marshal
+input: Pick 18 Picker Bob 
+output: Bob please pick next at A,1,1,1
+input: Marshal Picker Alice
+output: Sue sequence order set3
+output: Alice reached marshal area
+input: Pick 18 Picker Bob 
+output: Bob please pick next at B,0,2,2
+input: Sequence 19 Sequencer Sue 
+output: Sue scanned 19
+input: Sequence 25 Sequencer Sue 
+output: Sue scanned 25
+input: Sequence 29 Sequencer Sue 
+output: Sue scanned 29
+input: Sequence 1 Sequencer Sue 
+output: Sue scanned 1
+input: Sequence 20 Sequencer Sue 
+output: Sue scanned 20
+input: Sequence 26 Sequencer Sue 
+output: Sue scanned 26
+input: Sequence 30 Sequencer Sue 
+output: Sue scanned 30
+input: Sequence 2 Sequencer Sue 
+output: Sue sequenced correct, please confirm
+input: Confirm Sequencer Sue
+output: Sue confirmed, ready to load
+output: Loader Bill begin scanning picking request 3
+input: Ready Sequencer Sue
+input: Pick 35 Picker Bob 
+output: Bob please pick next at B,0,2,3
+input: Replenish 19 Replenisher Ruby 
+output: Ruby scanned 19
+input: Pick 36 Picker Bob 
+output: Bob please Confirm
+input: Confirm Picker Bob
+output: Bob go to marshal
+input: Load 20 Loader Bill 
+output: Correct scan.
+input: Load 26 Loader Bill 
+output: Correct scan.
+input: Load 30 Loader Bill 
+output: Correct scan.
+input: Load 2 Loader Bill 
+output: Correct scan.
+input: Load 19 Loader Bill 
+output: Correct scan.
+input: Load 25 Loader Bill 
+output: Correct scan.
+input: Load 29 Loader Bill 
+output: Correct scan.
+input: Load 1 Loader Bill 
+output: Correct scan.
+input: Confirm Loader Bill
+input: Loaded 3 Loader Bill
+input: Ready Loader Bill
+input: Marshal Picker Bob 
+output: Sue sequence order set4
+output: Bob reached marshal area
+input: Ready Picker Bob
+input: Sequence 13 Sequencer Sue 
+output: Sue scanned 13
+input: Sequence 35 Sequencer Sue 
+output: Sue scanned 35
+input: Sequence 17 Sequencer Sue 
+output: Sue scanned 17
+input: Sequence 17 Sequencer Sue 
+output: Sue scanned 17
+input: Sequence 14 Sequencer Sue 
+output: Sue scanned 14
+input: Sequence 36 Sequencer Sue 
+output: Sue scanned 36
+input: Sequence 18 Sequencer Sue 
+output: Sue scanned 18
+input: Sequence 19 Sequencer Sue
+output: Sue Sku 19 is incorrect. Rescan or throw away.
+input: Rescan Sequencer Sue
+input: Sequence 19 Sequencer Sue
+output: Sue Sku 19 is incorrect. Rescan or throw away.
+input: Rescan Sequencer Sue
+input: Sequence 19 Sequencer Sue
+output: Sue Sku 19 is incorrect. Rescan or throw away.
+input: Throwout Sequencer Sue
+output: Bob please pick next at A,1,0,0
+input: Ready Sequencer Sue
+input: Pick 13 Picker Bob
+output: Bob please pick next at A,1,0,1
+input: Pick 14 Picker Bob
+output: Bob please pick next at A,1,1,0
+input: Pick 17 Picker Bob
+output: Bob please pick next at A,1,1,0
+input: Pick 17 Picker Bob
+output: Bob please pick next at A,1,1,1
+input: Pick 18 Picker Bob
+output: Bob please pick next at A,1,1,1
+input: Pick 18 Picker Bob
+output: Bob please pick next at B,0,2,2
+input: Pick 35 Picker Bob
+output: Bob please pick next at B,0,2,3
+input: Pick 36 Picker Bob
+output: Bob please Confirm
+input: Confirm Picker Bob
+output: Bob go to marshal
+input: Marshal Picker Bob
+output: Sue sequence order set4
+output: Bob reached marshal area
+input: Sequence 13 Sequencer Sue 
+output: Sue scanned 13
+input: Sequence 35 Sequencer Sue 
+output: Sue scanned 35
+input: Sequence 17 Sequencer Sue 
+output: Sue scanned 17
+input: Sequence 17 Sequencer Sue 
+output: Sue scanned 17
+input: Sequence 14 Sequencer Sue 
+output: Sue scanned 14
+input: Sequence 36 Sequencer Sue 
+output: Sue scanned 36
+input: Sequence 18 Sequencer Sue 
+output: Sue scanned 18
+input: Sequence 18 Sequencer Sue
+output: Sue sequenced correct, please confirm
+input: Confirm Sequencer Sue
+output: Sue confirmed, ready to load
+output: Loader Bill begin scanning picking request 4
+input: Load 14 Loader Bill 
+output: Correct scan.
+input: Load 36 Loader Bill 
+output: Correct scan.
+input: Load 18 Loader Bill 
+output: Correct scan.
+input: Load 18 Loader Bill 
+output: Correct scan.
+input: Load 13 Loader Bill 
+output: Correct scan.
+input: Load 35 Loader Bill 
+output: Correct scan.
+input: Load 17 Loader Bill 
+output: Correct scan.
+input: Load 17 Loader Bill 
+output: Correct scan.
+input: Confirm Loader Bill
+input: Loaded 4 Loader Bill 
+input: End
